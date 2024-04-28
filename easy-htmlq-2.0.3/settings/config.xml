@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <config version="2.1.1" htmlParse="false">
+
+     <!-- title of the study -->
+     <item id="studyTitle">老年人尊严需求</item>
+
+     <!-- text-align property(left|right) -->
+     <item id="textAlign">left</item>
+
+     <!-- shuffle cards (true|false) (4) -->
+     <item id="shuffleCards">false</item>
+
+     <!-- access code required (true|false) (5) -->
+     <item id="loginrequired">false</item>
+     <item id="clearCachePassword">cleareqmobilecache</item>
+     <!-- login with common password (leave blank if not required) -->
+     <item id="loginPassword"></item>
+    <item id="partNameRequired">true</item>
+      <!-- Use login script -->
+     <item id="useLogInScript">false</item>
+      <!-- URL to individual login script(leave blank if not required) -->
+     <item id="loginUrl"></item>
+     <!-- request mode (post|get) -->
+     <item id="loginUrlMethod"></item>
+
+     <item id="setConstantCardHeight">true</item>
+     <item id="constantCardHeight">150</item>
+     <item id="setConstantCardWidth">true</item>
+     <item id="constantCardWidth">200</item>
+     <!-- activate/deactivate optional steps (true|false) -->
+     <item id="showStep3">true</item>
+     <item id="showStep4">true</item>
+     <item id="showStep5">true</item>
+
+     <!-- HtmlQ only: disable the in-window back button -->
+     <item id="disableBackButton">true</item>
+
+     <!-- define form elements for step5; only displayed if showStep5 is true (delete tags if not required) -->
+     <!-- add label: <label>[STRING]</label> -->
+     <!-- add note: <note>[STRING]</note> -->
+     <!-- add input-field: <input type="[text|textarea|radio|select|checkbox|rating2|rating5|rating10]">[VALUE]</input> -->
+     <!-- optional attributes: bg, id, maxlength, restricted, required, scale  -->
+     <item id="form">
+        <label>性别</label>
+        <input type="select" required="true">男;女</input>
+
+        <label>您的年龄</label>
+        <input type="select" required="true">61~69;70~79;80-89；≥90</input>
+
+        <label>您的居住地</label>
+        <input type="select" required="true">城市;乡村</input>
+
+        <label>您的婚姻状态  </label>
+        <input type="select" required="true">未婚;已婚;离异;丧偶</input>
+
+        <label>您的子女个数</label>
+        <input type="select" required="false">0;1;2;≥3</input>
+
+        <label>您的居住情况 </label>
+        <input type="select" required="true">与子女同住;与配偶同住;与配偶、子女同住;独居;保姆或护理员</input>
+
+        <label>您的文化程度 </label>
+        <input type="select" required="true">小学及以下;初中;高中或中专;大专;本科及以上</input>
+
+        <label>工作情况</label>
+        <input type="select" required="true">在职;退休</input>
+
+        <label>患有慢性病种类</label>
+        <input type="select" required="true">1; 2-4;≥5</input>
+
+        <label>长期用药（种）</label>
+        <input type="select" required="true">0-2; 3-4;≥5</input>
+
+        <label>家庭收入来源</label>
+        <input type="select" required="true">退休金;配偶或子女;政府救助;其他</input>
+
+        <label>生活自理能力</label>
+        <input type="select" required="true">不能自理;部分自理，需要人照顾;完全自理，不需要特别照顾</input>
+
+     </item>
+
+     <!-- URL for data transmission via POST/GET (leave blank if not required) -->
+     <item id="submitUrl">exe.php?do=save</item>
+  
+     <!-- request mode (post|get|firebase) -->
+     <item id="submitUrlMethod">firebase</item>
+  
+     <!-- data transmission via email, user must have an e-mail programm like Outlook (leave blank if not required) -->
+     <item id="submitMail">yourdomain.com</item>
+   </config>
